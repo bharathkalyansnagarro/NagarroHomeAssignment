@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Student Enrollment Form using HTML,CSS,JS and Bootstrap!!"
+    />
+    <meta name="author" content="Bharath Kalyan S" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JS, Bootstrap, Student Enrollment Form!"
+    />
+    <title>Student Enrollment Form!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/favicons/nagarro_logo_favicon.jpg"
+      type="image/x-icon"
+    />
+    <script src="myscript.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- <img class="logo" src="images/nagarro_logo.webp" alt="logo" /> -->
+      <h2 class="heading center">Student Enrollment Form</h2>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Left Side of the ContainerF -->
+        <div class="split left-side">
+          <form id="studentForm">
+            <table id="input">
+              <tr>
+                <td>
+                  <label for="name" class="form-label">Name</label>
+                </td>
+                <td>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="John Doe"
+                    autocomplete="off"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="email" class="form-label">Email</label>
+                </td>
+                <td>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="john@mail.com"
+                    autocomplete="off"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="website" class="form-label">Website</label>
+                </td>
+                <td>
+                  <input
+                    id="website"
+                    type="text"
+                    placeholder="www.google.com"
+                    autocomplete="off"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="image-link" class="form-label">Image Link</label>
+                </td>
+                <td>
+                  <input
+                    id="image-link"
+                    type="text"
+                    placeholder="www.deel.images.com/image"
+                    autocomplete="off"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label class="form-label">Gender</label>
+                </td>
+                <td>
+                  <input type="radio" id="male" name="gender" value="" />
+                  <label for="male" class="form-label">Male</label>
+                  <br />
+                  <input type="radio" id="female" name="gender" value="" />
+                  <label for="female" class="form-label">Female</label>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label>Skills</label></td>
+                <td>
+                  <input type="checkbox" name="Java" id="java" />
+                  <label class="form-label">Java</label>
+                  <input type="checkbox" name="HTML" id="html" />
+                  <label class="form-label">HTML</label>
+                  <input type="checkbox" name="CSS" id="css" />
+                  <label class="form-label">CSS</label>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <button id="submitButton" type="submit">Enroll Student</button>
+                  <button id="resetButton" type="reset">Clear</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+
+        <!-- Right Side of the Container -->
+        <div class="split right-side">
+          <!-- Populate Student Side!! -->
+          <h3 style="text-align: center;font-weight: 600px; margin-bottom: 5px">Enrolled Students</h3>
+
+          <table class="enrolledStudents">
+            <thead class="enrolledTHead">
+              <tr>
+                <th style="text-align:left">Description</th>
+                <th style="text-align:right;">Image</th>
+              </tr>
+            </thead>
+            <tbody class="enrolledTBody">
+
+              <tr>
+                <td>
+                  <div class="descriptionBody">
+                    Bharath Kalyan
+                    <p>
+                      Male
+                      <br />
+                      bharath@mail.com
+                      <br />
+                      <a href="www.bharath.com" target="_blank"
+                        >www.bharath.com</a
+                      >
+                      <br />
+                      Java , HTML, CSS
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <div class="imageTableBody">
+                    <img src="images/defaultImage.png" alt="studentPhoto" />
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <div class="descriptionBody">
+                    Bharath Kalyan
+                    <p>
+                      Male
+                      <br />
+                      bharath@mail.com
+                      <br />
+                      <a href="www.bharath.com" target="_blank"
+                        >www.bharath.com</a
+                      >
+                      <br />
+                      Java , HTML, CSS
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <div class="imageTableBody">
+                    <img src="images/defaultImage.png" alt="studentPhoto" />
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <div class="descriptionBody">
+                    Bharath Kalyan
+                    <p>
+                      Male
+                      <br />
+                      bharath@mail.com
+                      <br />
+                      <a href="www.bharath.com" target="_blank"
+                        >www.bharath.com</a
+                      >
+                      <br />
+                      Java , HTML, CSS
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <div class="imageTableBody">
+                    <img src="images/defaultImage.png" alt="studentPhoto" />
+                  </div>
+                </td>
+              </tr>
+
+
+
+              <tr>
+                <td>
+                  <div class="descriptionBody">
+                    Bharath Kalyan
+                    <p>
+                      Male
+                      <br />
+                      bharath@mail.com
+                      <br />
+                      <a href="www.bharath.com" target="_blank"
+                        >www.bharath.com</a
+                      >
+                      <br />
+                      Java , HTML, CSS
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <div class="imageTableBody">
+                    <img src="images/defaultImage.png" alt="studentPhoto" />
+                  </div>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer class="center">
+      <p>Developed by : Bharath Kalyan S, Copyright by Nagarro</p>
+    </footer>
+  </body>
+</html>

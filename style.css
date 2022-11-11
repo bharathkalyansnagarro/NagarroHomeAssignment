@@ -1,0 +1,163 @@
+:root {
+  --aquarium: #24bd76;
+  --white: #fefefe;
+  --gold: #1ae185;
+}
+
+* {
+  font-family: "sans-serif", Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: var(--aquarium);
+  color: var(--aquarium);
+  padding: 3vh;
+}
+
+/* Body of the Page */
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.logo {
+  height: 45px;
+  margin: 3px;
+  float: left;
+}
+
+.heading {
+  color: var(--white);
+  font-size: xx-large;
+  padding-right: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+/* Main Container Alignment */
+.container {
+  position: relative;
+  height: 77vh;
+  padding-top: 1vh;
+  margin-top: 10vh;
+  /* border: 2px solid red; */
+}
+
+/* Dividing Our Container into 2 Vertical Columns */
+.split {
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.split.left-side {
+  left: 0;
+  border-right: 2px solid var(--aquarium);
+}
+
+.split.right-side {
+  right: 0;
+  display: block;
+  border-left: 2px solid var(--aquarium);
+  overflow: auto;
+}
+
+
+/*Form Details*/
+
+#input{
+  margin: auto;
+  padding: 5px;
+  /* width: 80%; */
+}
+
+#input td{
+  padding: 1vh;
+  margin: 0px auto;
+  text-align: left;
+}
+
+
+
+/* Enrollment Table */
+.enrolledStudents {
+  width: 80%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.enrolledTBody td {
+  border: 1px solid --gold;
+  padding: 5px;
+  animation: fadeIn 5s both;
+}
+
+@keyframes fadeIn {
+  0%{
+      opacity: 0;
+  }
+  50%{
+      opacity: 30;
+  }
+  100%{
+      opacity: 90;
+  }
+}
+
+.enrolledTHead th {
+  padding: 5px;
+  background-color: var(--gold);
+  color: var(--white);
+}
+
+
+.enrolledTBody img {
+  width: 100px;
+  height: 110px;
+  display: block;
+  float: right;
+}
+
+.enrolledTBody tr {
+  border: 1px solid black;
+  background-color: var(--white);
+}
+
+.enrolledTBody tr:nth-last-child(odd) {
+  background-color: var(--gold);
+}
+
+
+/*Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-style: italic;
+  background-color: var(--aquarium);
+  color: var(--white);
+  text-align: center;
+  font-size: small;
+  font-weight: 400;
+}
