@@ -31,7 +31,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script src="myscript.js"></script>
   </head>
   <body>
     <header>
@@ -73,7 +72,7 @@
                     placeholder="john@mail.com"
                     autocomplete="off"
                   />
-                  <span id="spanName" class="span"></span>
+                  <span id="spanEmail" class="span"></span>
                 </td>
               </tr>
 
@@ -89,7 +88,7 @@
                     placeholder="www.google.com"
                     autocomplete="off"
                   />
-                  <span id="spanName" class="span"></span>
+                  <span id="spanWebsite" class="span"></span>
                 </td>
               </tr>
 
@@ -119,7 +118,7 @@
                   <input type="radio" id="female" name="gender" value="" />
                   <label for="female" class="form-label">Female</label>
                   <br />
-                  <span id="spanName" class="span"></span>
+                  <span id="spanGender" class="span"></span>
                 </td>
               </tr>
 
@@ -157,14 +156,14 @@
               <tr>
                 <td colspan="2">
                   <button
-                    id="submitButton"
+                    id="submit"
                     type="submit"
                     class="btn btn-primary mt-2 me-2 mb-4"
                   >
                     Enroll Student
                   </button>
                   <button
-                    id="resetButton"
+                    id="reset"
                     type="reset"
                     class="btn btn-danger mt-2 ms-2 mb-4"
                   >
@@ -192,95 +191,21 @@
                 <th class="ps-1">Image</th>
               </tr>
             </thead>
-            <tbody class="enrolledTBody">
+            <tbody id = "tableBody" class="enrolledTBody">
               <tr>
                 <td>
-                  <div class="descriptionBody">
-                    Bharath Kalyan
-                    <p>
-                      Male
-                      <br />
-                      bharath@mail.com
-                      <br />
-                      <a href="www.bharath.com" target="_blank"
-                        >www.bharath.com</a
-                      >
-                      <br />
-                      Java , HTML, CSS
-                    </p>
-                  </div>
-                </td>
-                <td>
-                  <div class="imageTableBody">
-                    <img src="images/defaultImage.png" alt="studentPhoto" />
-                  </div>
-                </td>
-              </tr>
-              <!-- Hard Coded -->
-              <tr>
-                <td>
-                  <div class="descriptionBody">
-                    Bharath Kalyan
-                    <p>
-                      Male
-                      <br />
-                      bharath@mail.com
-                      <br />
-                      <a href="www.bharath.com" target="_blank"
-                        >www.bharath.com</a
-                      >
-                      <br />
-                      Java , HTML, CSS
-                    </p>
-                  </div>
-                </td>
-                <td>
-                  <div class="imageTableBody">
-                    <img src="images/defaultImage.png" alt="studentPhoto" />
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <div class="descriptionBody">
-                    Bharath Kalyan
-                    <p>
-                      Male
-                      <br />
-                      bharath@mail.com
-                      <br />
-                      <a href="www.bharath.com" target="_blank"
-                        >www.bharath.com</a
-                      >
-                      <br />
-                      Java , HTML, CSS
-                    </p>
-                  </div>
-                </td>
-                <td>
-                  <div class="imageTableBody">
-                    <img src="images/defaultImage.png" alt="studentPhoto" />
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <div class="descriptionBody">
-                    Bharath Kalyan
-                    <p>
-                      Male
-                      <br />
-                      bharath@mail.com
-                      <br />
-                      <a href="www.bharath.com" target="_blank"
-                        >www.bharath.com</a
-                      >
-                      <br />
-                      Java , HTML, CSS
-                    </p>
-                  </div>
+                  Bharath Kalyan
+                  <p>
+                    Male
+                    <br />
+                    bharath@mail.com
+                    <br />
+                    <a href="www.bharath.com" target="_blank"
+                      >www.bharath.com</a
+                    >
+                    <br />
+                    Java , HTML, CSS
+                  </p>
                 </td>
                 <td>
                   <div class="imageTableBody">
@@ -297,5 +222,7 @@
     <footer class="center">
       <p>Developed by Bharath Kalyan S, Copyright by Nagarro</p>
     </footer>
+
+    <script src="myscript.js"></script>
   </body>
 </html>
